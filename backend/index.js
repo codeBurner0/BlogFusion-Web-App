@@ -66,6 +66,8 @@ app.delete('/blogs/:id',async(req,res)=>{
     let result=await blog.deleteOne({_id:req.params.id})
     res.send(result);
 })
+
+
 app.listen(5000,()=>{
     console.log("server is started");
 })
