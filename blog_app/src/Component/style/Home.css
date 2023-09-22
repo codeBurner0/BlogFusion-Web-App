@@ -1,0 +1,169 @@
+
+/* section 1 */
+.section1 {
+    width: 42%;
+    max-width: 555px;
+    padding: 20px 5px;
+    margin: 1% 22%;
+    z-index: 30;
+    
+    
+}
+
+.section1-title {
+    font-size: 221%;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.section1-para {
+    font-size: 20px;
+    padding: 15px 10px;
+    width: 460px;
+    font-family: 'Caveat', cursive;
+}
+
+/* section 2 */
+
+
+.section2{
+    position: relative;
+}
+.foreground {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 70%;
+    right: 0;
+    height: 208%;
+    background-image: url("../images/home-background.png");
+    background-size: cover;
+}
+
+.front {
+    position: absolute;
+    top: 20vw;
+    mix-blend-mode: multiply;
+    width: 100vw;
+    padding: 10px 0px;
+    transition: transform .2s;
+}
+ .back {
+    position: absolute;
+    top: 0vw;
+    width: 100vw;
+    padding: 10px 0px;
+    transition: transform .2s;
+}
+
+.bird{
+    position: absolute;
+    width: 50%;
+}
+
+.fire {
+    position: absolute;
+    top: 33.5vw;
+    left: 55.4vw;
+    width: 13.5vw;
+    z-index: 20;
+
+}
+
+@media  screen and (max-width:990px) {
+    .section1 {
+        width: 58%;
+        max-width: 555px;
+        padding: 20px 5px;
+        margin: 1% auto;
+    }
+    .section1-title {
+        width: 100%;
+        font-size: 170%;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .section1-para {
+        font-size: 100%;
+        padding: 15px 10px;
+        width: 100%;
+        font-family: 'Caveat', cursive;
+    }
+    
+}
+
+@media  screen and (max-width:650px) {
+    /* //510 */
+    .section1 {
+        width: 65%;
+    }
+    .section1-title {
+        font-size: 100%;
+    }
+    .section1-para {
+        font-size: 80%;
+    }
+    .bird{
+        position: absolute;
+        width: 50%;
+    }
+}
+
+
+@media  screen and (max-width:400px) {
+    .section1 {
+        width: 65%;
+        max-width: 555px;
+        padding: 10px 5px;
+        margin: 10% auto;
+    }
+    .section1-title {
+        width: 100%;
+        font-size: 100%;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .section1-para {
+        font-size: 77%;
+        padding: 7px 8px;
+        width: 100%;
+        font-family: 'Caveat', cursive;
+    }
+    .button {
+        margin-top: 1%;
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 5px 18px;
+        border: none;
+        border-radius: 20px;
+        font-size: 18px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.357), 0 6px 20px 0 rgba(0, 0, 0, 0.742);
+        transition: transform .2s;
+        cursor: pointer;
+    }
+
+
+    .foreground {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 10%;
+        right: 0;
+        height: 17rem;
+        background-image: url(http://localhost:3000/static/media/home-background.42aeddf….png);
+        background-size: cover;
+    }
+    .bird{
+        position: absolute;
+        top: -20px;
+        width: 50%;
+    }
+    .fire {
+        position: absolute;
+        top: 35.5vw;
+        left: 55.4vw;
+        width: 13.5vw;
+        z-index: 20;
+    
+    }
+    
+}

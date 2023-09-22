@@ -1,0 +1,323 @@
+/* section 3 */
+.footer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100vw;
+    padding-top: 30px;
+    font-size: 20px;
+    z-index: 50;
+}
+
+.container {
+    position: relative;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 50rem;
+    position: relative;
+}
+
+.dot {
+    width: 52%;
+    height: 380px;
+
+    position: absolute;
+    top: 3vw;
+    z-index: -1;
+}
+
+.section3 .man {
+    position: absolute;
+    top: 2vw;
+    width: 45%;
+    padding-top: 125px;
+    transition: tranform .2s;
+    cursor: pointer;
+}
+
+.section3 .man:hover {
+    transform: scale(1.04);
+}
+
+.section3 .content {
+    width: 58%;
+    font-size: 30px;
+    padding-left: 0px;
+    padding-top: 300px;
+}
+
+.text {
+    width: 43%;
+    position: absolute;
+    top: 30vw;
+}
+
+.section3 .content .title2 {
+
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 33px;
+}
+
+.bird2 {
+    position: absolute;
+    top: -3vw;
+    right: 0;
+    width: 40%;
+    height: 60%;
+}
+
+.circle {
+    position: absolute;
+    top: 0vw;
+    width: 26%;
+    right: 0px;
+}
+
+.section3-para {
+    width: 110%;
+    font-size: 20px;
+    padding: 20px 2px;
+    font-family: 'Caveat', cursive;
+}
+
+/* section 4 */
+
+.section4 {
+    position: relative;
+}
+
+.foreground2 {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    top: 11vw;
+    height: 50vw;
+    background-image: url("../images/process-cloud-background.png");
+    background-size: cover;
+}
+
+.foreground {
+    z-index: 20;
+}
+
+.fore {
+    position: absolute;
+    top: 38vw;
+    width: 100vw;
+    transition: transform .2s;
+}
+
+.svg4 {
+    width: 10vw;
+    position: absolute;
+    right: 37vw;
+    top: 37vw;
+    z-index: 3;
+    animation: rotation 5s infinite linear;
+}
+
+.svg5 {
+    position: absolute;
+    top: 4vw;
+    width: 40%;
+    transition: transform .3s
+}
+
+.svg5:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+@media screen and (max-width:990px) {
+    .footer{
+        top: 110vw;
+        font-size: 18px;
+    }
+    .text {
+        width: 36%;
+        position: absolute;
+        top: 35vw;
+        right: 6vw;
+    }
+
+    .bird2 {
+        position: absolute;
+        top: 0vw;
+        right: 0;
+        width: 40%;
+        height: 60%;
+    }
+
+    .circle {
+        top: 9vw;
+    }
+
+    .svg5 {
+        top: -3vw;
+    }
+
+    .foreground2 {
+        top: 30vw ;
+    }
+    .svg4 {
+        top: 48.5vw;
+    right: 36.5vw;
+    }
+    .fore {
+        top: 50vw;
+        width: 100vw;
+        transition: transform .2s;
+    }
+
+    
+}
+
+@media screen and (max-width:650px) {
+    .footer{
+        top: 145vw;
+        font-size: 16px;
+    }
+    .section3 {
+        grid-template-columns: 1fr;
+    }
+
+    .dot {
+        width: 100%;
+    }
+
+    .section3 .man {
+        width: 90%;
+    }
+
+
+    .section3 > .content {
+        width: 58%;
+        font-size: 30px;
+        padding-left: 0px;
+        padding-top: 300px;
+    }
+
+    .text {
+        width: 82%;
+        position: absolute;
+        top: 125vw;
+        left: 50%;
+        transform: translateX(-53%);
+    }
+
+    .section3 .content .title2 {
+        font-size: 30px;
+    }
+
+    .bird2 {
+        top: 82vw;
+        right: 0;
+        width: 39%;
+        height: 46%;
+    }
+
+    .circle {
+        top: 93vw;
+    }
+
+
+    
+    .svg5 {
+        top: 135vw;
+    }
+
+    .foreground2 {
+        top: 65vw ;
+    }
+    .svg4 {
+        top: 83.7vw;
+    right: 35.4vw;
+    }
+    .fore {
+        top: 85vw;
+    }
+
+}
+
+
+
+@media screen and (max-width:400px) {
+    .footer{
+        top: 185vw;
+        font-size: 14px;
+    }
+    .section3 {
+        grid-template-columns: 1fr;
+    }
+
+    .dot {
+        width: 100%;
+    }
+
+    .section3 .man {
+        width: 90%;
+    }
+
+    .section3 .content {
+        width: 58%;
+        font-size: 30px;
+        padding-left: 0px;
+        padding-top: 300px;
+    }
+
+    .text {
+        width: 82%;
+        position: absolute;
+        top: 145vw;
+        left: 50%;
+        transform: translateX(-53%);
+    }
+
+    .section3 .content .title2 {
+        font-size: 30px;
+    }
+
+    .bird2 {
+        top: 82vw;
+        right: 0;
+        width: 45%;
+        height: 46%;
+    }
+
+    .circle {
+        top: 110vw;
+        width: 30%;
+    }
+
+
+    .svg5 {
+        top: 170vw;
+    }
+
+    .foreground2 {
+        top: 95vw ;
+    }
+    .svg4 {
+        top: 118vw;
+    right: 38.3vw;
+    }
+    .fore {
+        top: 120vw;
+    }
+}

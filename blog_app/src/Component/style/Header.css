@@ -1,0 +1,154 @@
+.title {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    padding: 24px 45px;
+    padding-left: 92px;
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.icon {
+    display: none;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+.logo {
+    display: inline-block;
+    transition: transform .3s;
+}
+
+.title span {
+    margin-top: 0.5vw;
+    font-size: 3.5vw;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+}
+
+.list {
+    margin-top: 3.4vw;
+    margin-right: 2.2vw;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    font-size: 1.6vw;
+}
+
+.show {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
+
+.logo1 {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(37, 19, 4);
+}
+
+.anchor {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 2vw;
+    color: rgb(37, 19, 4);
+    transition: transform .3s;
+}
+
+.anchor:hover {
+    text-decoration: underline;
+    transform: translateY(10%);
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (max-width:980px) {
+    .title span {
+        margin-top: 0vw;
+        font-size: 3.5vw;
+    }
+
+    .nav-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        text-align: center;
+
+    }
+    .anchor{
+        padding: 1vw 2.3vw
+    }
+
+    .list {
+        display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1.8vw;
+    background-color: #e6e5e1;
+    border-radius: 10px;
+    margin: -13px 16%;
+    }
+}
+
+
+
+@media  screen and (max-width:650px) {
+    /* 510 */
+    .title {
+    padding: 4vw 1vw;
+    padding-left: 9vw;
+    }
+    .nav-bar{
+        grid-template-columns: 1fr;
+    }
+    .title span {
+        float: left;
+        font-size: 6vw;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .show{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 18px;
+        background-color: #e6e5e1;
+        padding: 8px 0;
+        border-radius: 10px;
+        margin: 0 1%;
+        animation:ring 3s ease-in-out;
+    }
+    .icon{
+        display: inline-block;
+        position: absolute;
+        right: 5%;
+        font-weight: 900;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 1.4vw;
+    }
+    .anchor {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1px;
+        color: rgb(37, 19, 4);
+        transition: transform .3s;
+    }
+
+    #blog{
+        grid-column: 1/3;
+    }
+} 

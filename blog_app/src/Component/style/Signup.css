@@ -1,0 +1,25 @@
+.signup-box{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.signup-box>input{
+    display: block;
+    padding: 1vw;
+    margin: 2vw;
+    width: 40vw;
+    border-radius: 10px;
+}
+
+.signup-button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20vw;
+    padding: 0.6vw;
+    border-radius: 10px;
+}
+.signup-button:hover{
+    cursor: pointer;
+}

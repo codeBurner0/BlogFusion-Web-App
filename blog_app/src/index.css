@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: #f7f6ee;
+}
+
+.button {
+    margin-top: 1%;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.357), 0 6px 20px 0 rgba(0, 0, 0, 0.742);
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.08);
+    color: black;
+    background-color: white;
+    font-weight: 800;
+}
