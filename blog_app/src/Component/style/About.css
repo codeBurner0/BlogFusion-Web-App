@@ -1,16 +1,7 @@
-/* section 3 */
-.footer{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 100vw;
-    padding-top: 30px;
-    font-size: 20px;
-    z-index: 50;
-}
 
-.container {
+.a-container {
     position: relative;
+    padding-bottom: 105vw;
 }
 
 .section3 {
@@ -145,6 +136,9 @@
 
 
 @media screen and (max-width:990px) {
+    .a-container {
+        padding-bottom: 120vw;
+    }
     .footer{
         top: 110vw;
         font-size: 18px;
@@ -189,6 +183,9 @@
 }
 
 @media screen and (max-width:650px) {
+    .a-container {
+        padding-bottom: 155vw;
+    }
     .footer{
         top: 145vw;
         font-size: 16px;
@@ -258,6 +255,9 @@
 
 
 @media screen and (max-width:400px) {
+        .a-container {
+            padding-bottom: 190vw;
+        }
     .footer{
         top: 185vw;
         font-size: 14px;

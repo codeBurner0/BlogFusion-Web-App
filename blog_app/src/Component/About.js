@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/About.css'
-
+import { motion } from "framer-motion";
 import BlueDot from "./images/blue-dots.gif"
 import PinkBlob from "./images/pink-blob.svg"
 import Bird from "./images/bird.png"
@@ -8,7 +8,9 @@ import Man from "./images/man.png"
 import ProForeGround from "./images/process-foreground.png"
 function About() {
   return (
-    <div className='container'>
+    <motion.div
+    whileInView={{ opacity: [0, 1], y: [100, 0] }}
+    transition={{ duration: 2 }} className='a-container'>
       <div className="section3">
         <div>
           <img className="dot" src={BlueDot} alt="" />
@@ -448,10 +450,9 @@ function About() {
         </svg>
         <div className="foreground2"></div>
         <img className='fore' src={ProForeGround} alt="" />
-        <div className="footer">&copy;Ankit Anand</div>
     </div>
     
-    </div>
+    </motion.div>
   )
 }
 

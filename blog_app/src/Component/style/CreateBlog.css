@@ -1,0 +1,116 @@
+.createblog_grid{
+    display: grid;
+    grid-template-columns: 55vw 45vw;
+}
+
+.contact-form2{
+    margin-left: 16vw;
+    width: 320px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+  }
+
+  .create_input{
+    width: 230px;
+  }
+
+  .create_button{
+    width: 230px;
+    font-size: 15px;
+  }
+
+.createblog_cloud{
+    width: 40vw;
+    position: relative;
+    z-index: -1;
+}
+
+.createblog_sec1{
+    margin-top: 5vw;
+    position: relative;
+}
+
+.createblog_img{
+    padding-top: 8vw;
+    width: 100vw;
+}
+
+.createblog_img2{
+    width: 70vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.createblog_bird{
+    width: 60vw;
+    position: absolute;
+    top: 2vw;
+    left: 0;
+}
+
+.choose_color{
+  margin: 0px auto;
+  margin-left: -15px;
+  text-align: center;
+  color: rgb(90, 88, 88);
+}
+
+.color_text{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.c_color{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color:black ;
+  margin: 10px 5px;
+}
+
+.c_color:hover{
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.color1{
+  background-color:#99c4b9;
+}
+
+.color2{
+  background-color:#eabbbb;
+}
+
+.color3{
+  background-color:#97c297;
+}
+
+@media  screen and (max-width:600px) {
+    .createblog_cloud{
+        width: 40vw;
+        position: relative;
+        z-index: -1;
+        left: 2vw;
+        top: 3vw;
+    }
+    .contact-form2{
+        margin-left: 10vw;
+        width: 280px;
+        padding-bottom: 50px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+      .create_input{
+        width: 233px;
+      }
+    
+      .create_button{
+        width: 230px;
+        font-size: 15px;
+      }
+      .choose_color{
+        margin-left: 0px;
+      }
+}

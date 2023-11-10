@@ -6,8 +6,6 @@
     padding: 20px 5px;
     margin: 1% 22%;
     z-index: 30;
-    
-    
 }
 
 .section1-title {
@@ -28,6 +26,7 @@
 
 .section2{
     position: relative;
+    padding-bottom: 75vw;
 }
 .foreground {
     position: absolute;
@@ -128,14 +127,14 @@
         font-family: 'Caveat', cursive;
     }
     .button {
-        margin-top: 1%;
+        margin-top: 6%;
         display: inline-block;
         background-color: black;
         color: white;
         padding: 5px 18px;
         border: none;
         border-radius: 20px;
-        font-size: 18px;
+        font-size: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.357), 0 6px 20px 0 rgba(0, 0, 0, 0.742);
         transition: transform .2s;
         cursor: pointer;
@@ -164,6 +163,9 @@
         width: 13.5vw;
         z-index: 20;
     
+    }
+    .section2{
+        padding-bottom: 80vw;
     }
     
 }

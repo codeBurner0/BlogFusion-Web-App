@@ -1,24 +1,29 @@
 .card_container {
-    position: relative;
-    min-width: 26vw;
-    min-height: 25vw;
-    background-image: url('../images/cardBack.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 6vw;
+    width: 28vw;
     filter: drop-shadow(10px 10px 10px  rgba(29, 28, 28, 0.423));
 }
+
+.card_container2{
+    position: relative;
+}
+
+.card_space{
+    display: inline;
+}
+
 .image{
     border-radius: 50%;
     width: 9.7vw;
     height: 9.5vw;
+    margin-left: 2vw;
     overflow: hidden;
 }
+
 .image>img {
     width: 9.7vw;
     height: 9.5vw;
     position: absolute;
-    left: -4.35vw;
+    left: -3.2vw;
     top: 2.12vw;
     z-index: 3;
     border-radius: 50%;
@@ -31,21 +36,12 @@
     cursor: pointer;
 }
 
-.cloud {
-    position: absolute;
-    width: 360px;
-    height: 400px;
-    z-index: -1;
-
-}
-
 .ImageIcon {
     width: 12vw;
     height: 11vw;
     position: absolute;
     top: 1.4vw;
-    left: -5.5vw;
-    color: #8f8e8a;
+    left: -4.3vw;
     z-index: 2;
 }
 
@@ -53,18 +49,16 @@
 
 .card {
     width: 18vw;
+    position: absolute;
+    top: 3.5vw;
+    left: 7vw;
     overflow: hidden;
     background-color: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     transition: transform .3s;
-    right: 2.5vw;
-    
 }
 
 .card:hover{
-    transform: translateY(-55%);
+    transform: translateY(-5%);
     cursor: pointer;
 }
 
@@ -107,7 +101,6 @@
 
 .update {
     display: inline-block;
-    background-color: #7a7a7a;
     color: white;
     border-radius: 50%;
     width: 2.5vw;
@@ -130,7 +123,7 @@
 .read {
     position: absolute;
     display: inline-block;
-    background-color: #7a7a7a;
+    background-color:rgb(98, 142, 144);
     color: white;
     border-radius: 5px;
     width: 8vw;

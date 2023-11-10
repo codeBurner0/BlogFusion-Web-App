@@ -1,13 +1,14 @@
 .cards_view{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 15%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top:10vw;
-    bottom: 12vw;
-    
+    column-gap: 4vw;
+    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-top: 3vw; 
+}
+
+.main{
+    padding-bottom: 0vw;
 }
 
 
@@ -15,9 +16,8 @@
     .cards_view{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        top: 20vw;
         column-gap: 5vw;
-        row-gap: 4%;
+        row-gap: 0%;
     }
 }
 @media  screen and (max-width:650px) {

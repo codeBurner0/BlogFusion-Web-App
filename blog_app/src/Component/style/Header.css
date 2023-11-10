@@ -8,6 +8,22 @@
     font-family: 'Permanent Marker', cursive;
 }
 
+
+.auth_img{
+    margin-top: -0.5vw;
+    width: 3vw;
+    border-radius: 50%;
+    margin-right: 7.8vw;
+}
+
+.auth_h2{
+    display: inline;
+    font-size:1.6vw ;
+    text-decoration: none;
+    right: 0.9vw;
+    position: absolute;
+
+}
 .icon {
     display: none;
 }
@@ -19,7 +35,7 @@
 
 .logo {
     display: inline-block;
-    transition: transform .3s;
+    transition: transform .6s;
 }
 
 .title span {
@@ -63,6 +79,13 @@
     color: rgb(37, 19, 4);
     transition: transform .3s;
 }
+.anchor2 {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 1vw;
+    color: rgb(37, 19, 4);
+    transition: transform .3s;
+}
 
 .anchor:hover {
     text-decoration: underline;
@@ -72,38 +95,8 @@
     font-weight: 600;
 }
 
-@media screen and (max-width:980px) {
-    .title span {
-        margin-top: 0vw;
-        font-size: 3.5vw;
-    }
 
-    .nav-bar {
-        grid-template-columns: 1fr;
-    }
-
-    .title {
-        text-align: center;
-
-    }
-    .anchor{
-        padding: 1vw 2.3vw
-    }
-
-    .list {
-        display: flex;
-    list-style-type: none;
-    justify-content: center;
-    font-size: 1.8vw;
-    background-color: #e6e5e1;
-    border-radius: 10px;
-    margin: -13px 16%;
-    }
-}
-
-
-
-@media  screen and (max-width:650px) {
+@media  screen and (max-width:950px) {
     /* 510 */
     .title {
     padding: 4vw 1vw;

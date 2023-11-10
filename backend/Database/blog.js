@@ -4,7 +4,9 @@ const blogSchema=new mongoose.Schema({
     imageUrl:String,
     title:String,
     content:String,
-    userId:String
+    userId:String,
+    color:String,
+    coloricon:String,
 
 })
 module.exports=mongoose.model('blogs',blogSchema);
