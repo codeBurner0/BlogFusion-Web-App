@@ -6,7 +6,9 @@ import PinkBlob from "./images/pink-blob.svg"
 import Bird from "./images/bird.png"
 import Man from "./images/man.png"
 import ProForeGround from "./images/process-foreground.png"
+import { useNavigate } from 'react-router-dom';
 function About() {
+    const navigate=useNavigate()
   return (
     <motion.div
     whileInView={{ opacity: [0, 1], y: [100, 0] }}
@@ -27,7 +29,7 @@ function About() {
               on a global stage. <br /><br />
               Whether you're here to share your passions, inspire change, or simply voice your thoughts,
               BlogFusion provides the canvas for your words to weave their magic.</p>
-            <button className="button">Get in touch</button>
+            <button className="button" onClick={()=>navigate('/contact')}>Get in touch</button>
           </div>
         </div>
       </div>

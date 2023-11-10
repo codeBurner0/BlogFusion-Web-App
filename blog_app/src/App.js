@@ -6,8 +6,8 @@ import CreateBlog from './Component/CreateBlog'
 import Blogs from './Component/Blogs'
 import {Route,Routes } from 'react-router-dom';
 import Home from './Component/Home'
-import Login from './Component/Login'
 import Footer2 from './Component/Footer2'
+import WithoutLogin from './Component/WithoutLogin'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path='/contact' Component={Contact} />
             <Route path='/createblog' Component={CreateBlog} />
             <Route path='/Blogs' Component={Blogs} />
-            <Route path='/Login' Component={Login} />
+            <Route path='/without' Component={WithoutLogin} />
         </Routes>
         <Footer2/>
       </div>

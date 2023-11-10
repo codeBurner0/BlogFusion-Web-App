@@ -8,19 +8,28 @@
     font-family: 'Permanent Marker', cursive;
 }
 
+.auth_none_h2{
+    display: none;
+}
 
+.header_span{
+    display: inline;
+    color: #765757;
+}
 .auth_img{
     margin-top: -0.5vw;
     width: 3vw;
     border-radius: 50%;
-    margin-right: 7.8vw;
+    margin-right: 0vw;
 }
+
 
 .auth_h2{
     display: inline;
-    font-size:1.6vw ;
+    font-size:1vw ;
     text-decoration: none;
-    right: 0.9vw;
+    right: 2vw;
+    top: 7.5vw;
     position: absolute;
 
 }
@@ -79,6 +88,13 @@
     color: rgb(37, 19, 4);
     transition: transform .3s;
 }
+.ancho {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 2vw;
+    color: rgb(37, 19, 4);
+    transition: transform .3s;
+}
 .anchor2 {
     display: inline-block;
     text-decoration: none;
@@ -110,19 +126,49 @@
         font-size: 6vw;
     }
 
+    .auth_img{
+        margin-top: -20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 0vw;
+    }
+    .auth_img:hover{
+        display: inline;
+        transform: translate(0);
+    }
+
+    .auth_none_h2{
+        display: block;
+        font-size: 8px;
+        padding-top: 0vw;
+        text-decoration: none;
+    }
+
     .list{
         display: none;
     }
 
     .show{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        font-size: 18px;
-        background-color: #e6e5e1;
+        grid-template-columns: repeat(1fr);
+        font-size: 15px;
+        background-color: #f7f6ee;
         padding: 8px 0;
+        padding-bottom: 0px;
         border-radius: 10px;
+        position: absolute;
         margin: 0 1%;
         animation:ring 3s ease-in-out;
+        width: 150px;
+        right: 8vw;
+        top: 15vw;
+        z-index: 100;
+        text-align: center;
+        box-shadow: 0.2px 0.2px 5px rgba(128, 128, 128, 0.481);
+        padding: 16px 22px;
+        padding-bottom: 20px;
+        border-radius: 20px;
     }
     .icon{
         display: inline-block;
@@ -133,12 +179,27 @@
         font-weight: bolder;
         margin-top: 1.4vw;
     }
+    .icon:hover{
+        cursor: pointer;
+    }
     .anchor {
         display: inline-block;
         text-decoration: none;
-        padding: 1px;
-        color: rgb(37, 19, 4);
+        padding: 5px;
+        color: #987474;
         transition: transform .3s;
+    }
+    .header_span{
+        display: block;
+        text-align: center;
+        color: #765757;
+    }
+    .anchor:hover {
+        text-decoration: none;
+        transform: translateY(0%);
+        cursor: pointer;
+        color: #765757;
+        font-weight: 900;
     }
 
     #blog{

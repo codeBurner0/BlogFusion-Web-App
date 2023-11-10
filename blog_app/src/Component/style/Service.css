@@ -18,6 +18,7 @@
         grid-template-columns: repeat(2,1fr);
         column-gap: 5vw;
         row-gap: 0%;
+        margin-left: 15vw;
     }
 }
 @media  screen and (max-width:650px) {
@@ -28,6 +29,7 @@
         transform: translate(0);
         margin-top: 5vw;
         margin: 5vw;
+        margin-left: 12vw;
     }
     
 }
@@ -38,6 +40,7 @@
         position: static;
         transform: translate(0);
         margin-top: 10vw;
+        margin-left: 18vw;
     }
     
 }

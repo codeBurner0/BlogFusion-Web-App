@@ -7,12 +7,11 @@ import "./style/Header.css";
 function Header() {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
   const [bool, setBool] = useState(false);
+  const [BoolName, setBoolName] = useState(false);
   function clicker() {
     setBool(!bool);
   }
   const navigate = useNavigate()
-
-  const auth = localStorage.getItem('user')
   return (
     <div>
       <div className="nav-bar ">
@@ -50,20 +49,21 @@ function Header() {
               </Link>
             </li>
               <li>
-                <Link className="anchor2">
-                  <img src={user.picture} alt={user.name} className="auth_img" />
-                  <h2 className="auth_h2">{user.name}</h2>
+                <Link className="ancho">
+                  <img src={user.picture} alt={''} className="auth_img" onClick={() => setBoolName(!BoolName)} />
+                  {<h2 className={BoolName ? "auth_h2" : "auth_none_h2"}> <span className="header_span">Hello!</span> <span className="header_span">{user.name}</span></h2>}
                 </Link>
-              </li> </> :
-              <li>
-                <Link className="anchor" onClick={() => loginWithRedirect()}>
-                  SignIn
-                </Link>
-              </li>
+              </li></> :
+              <>
+                <li>
+                  <Link className="anchor" onClick={() => loginWithRedirect()}>
+                    SignIn
+                  </Link>
+                </li>
+              </>
           }
         </div>
       </div>
-
     </div>
   );
 }

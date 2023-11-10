@@ -32,7 +32,7 @@
     width: 20vw;
     position: absolute;
     top: 0vw;
-    left: 74vw;
+    left: 72.5vw;
 }
 
 .footer-distributed{
@@ -135,7 +135,7 @@
 
 .footer-distributed .footer-center p a{
   color:  rgb(25, 226, 216);
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 .footer-distributed .footer-links a:before {

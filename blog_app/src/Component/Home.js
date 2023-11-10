@@ -4,7 +4,9 @@ import FrontImage from "./images/home-foreground.png";
 import BackImage from "./images/home-background.png";
 import FireImage from "./images/fire.gif";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 function Home() {
+    const navigate=useNavigate()
     return (
         <div>
             {/* <!-- section-1 --> */}
@@ -20,7 +22,7 @@ function Home() {
                     empower writers, storytellers, and thought leaders to shine on a
                     global stage.
                 </p>
-                <button className="button">Click Me</button>
+                <button className="button" onClick={()=>navigate('/about')}>Click Me</button>
             </motion.div>
             {/* <!-- section-2 --> */}
             <div className="section2">

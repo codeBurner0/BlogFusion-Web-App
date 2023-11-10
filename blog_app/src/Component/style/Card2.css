@@ -20,11 +20,11 @@
 }
 
 .image>img {
-    width: 9.7vw;
-    height: 9.5vw;
+    width: 9.8vw;
+    height: 9.7vw;
     position: absolute;
     left: -3.2vw;
-    top: 2.12vw;
+    top: 2.05vw;
     z-index: 3;
     border-radius: 50%;
     transition: transform .3s;
@@ -58,7 +58,7 @@
 }
 
 .card:hover{
-    transform: translateY(-5%);
+    transform: translateY(-1%);
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@
     height: 2.5vw;
     text-align: center;
     padding-top: 0.7vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-top: 0vw;
     margin-left: 1.4vw;
     margin-bottom: 10px;
@@ -142,13 +142,13 @@
 
 .rtext {
     position: absolute;
-    left: 1.9vw;
+    left: 1.2vw;
     top: 0.5vw;
 }
 
 .ricon {
     position: absolute;
-    left: 5vw;
+    left: 5.5vw;
     top: 0.65vw;
 }
 
@@ -160,12 +160,17 @@
 
 @media  screen and (max-width:990px) {
     .card_container {
-        min-width: 30vw;
-        min-height: 30vw;
+        width: 35vw;
+        filter: drop-shadow(10px 10px 10px  rgba(29, 28, 28, 0.423));
     }
     .card {
-        width: 18vw;
-        right: 4.5vw;
+        width:22vw;
+        position: absolute;
+        top: 6.5vw;
+        left: 8vw;
+        overflow: hidden;
+        background-color: none;
+        transition: transform .3s;
     }
     .read {
         right: 3vw;
@@ -174,6 +179,23 @@
     .update {
         margin-left: 2vw;
     }
+    .image>img {
+        width: 11.7vw;
+        height: 11.5vw;
+        position: absolute;
+        left: -5.7vw;
+        top: 2.05vw;
+        z-index: 3;
+        border-radius: 50%;
+        transition: transform .3s;
+        object-fit: cover;
+    }
+    .ImageIcon {
+        width: 15vw;
+        height: 13vw;
+        left: -7.3vw;
+    }
+    
 }
 
 
@@ -183,8 +205,9 @@
         min-height: 35vw;
     }
     .card {
-        width: 24vw;
+        width: 22vw;
         right: 4.5vw;
+        top:7vw;
     }
     .read {
         right: 3vw;
@@ -210,29 +233,29 @@
 }
 @media  screen and (max-width:400px) {
     .card_container {
-        min-width: 50vw;
-        min-height: 50vw;
+        width: 72vw;
     }
     .card {
-        width: 40vw;
-        right: 20vw;
+        width: 45vw;
+        left: 14.5vw;
+        top:7vw;
     }
     .read {
         background-color: #73726d;
         border-radius: 5px;
-        width: 13vw;
+        width: 14vw;
         height: 4.5vw;
         font-size: 2vw;
         right: 5vw;
-        bottom: 2.7vw;
+        bottom: 3vw;
     }
     .rtext {
-        left: 2.2vw;
+        left: 2.3vw;
         top: 0.9vw;
     }
     
     .ricon {
-        left: 7.5vw;
+        left: 10vw;
         top: 1.05vw;
     }
     .update {
@@ -247,26 +270,32 @@
         color: #73726d;
         width: 24vw;
         height: 24vw;
-        top: 1vw;
-        left: 2vw;
+        top: 5vw;
+        left: -12.5vw;
     }
     .image>img {
         width: 21.3vw;
         height: 20.8vw;
-        left: 3.38vw;
-        top: 2.55vw;
-    }
-    .card__body h4 {
-        font-size: 3vw;
-        margin-top: 2vw;
-    }
-    .card__body p {
-        font-size: 2vw;
+        left: -11.2vw;
+        top: 6.5vw;
     }
     .tag {
         padding: 0.5em 2em;
-        font-size: 1.5vw;
+        font-size: 2vw;
+    }
+    .tag-red {
+        background: #cb2d3e;
+        background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+        color: #fafafa;
     }
     
+    .card__body h4 {
+        font-size: 3.5vw;
+        margin-top: 2.5vw;
+        margin-bottom: 1vw;
+    }
+    .card__body p {
+        font-size: 2.5vw;
+    }
     
 }
