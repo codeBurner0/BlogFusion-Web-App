@@ -12,8 +12,6 @@ function Contact() {
           <h2 className='co_h2 co_h21'>"Connect with Us – Your Feedback, Our Fuel!".</h2>
           <p className='co_p'>We value your thoughts and suggestions. Feel free to reach out to us through the contact form, email, or social media. Your feedback is essential for us to improve and provide you with the best content and experience. Join our growing community and let's make this blog web app even better together. Your ideas fuel our journey!</p>
 
-
-
           <div className='contact-form'>
             <form id='form' action='https://formspree.io/f/xqkvgowl' method='post' className='text-center' style={{ width: '100%', maxWidth: '350px' }}>
               <h2 className='cont-h2'>Contact us</h2>
