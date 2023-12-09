@@ -13,7 +13,7 @@ function Card2() {
     }, [])
 
     const caller = async () => {
-        let result = await fetch('https://blogfusion.vercel.app/blogs');
+        let result = await fetch('https://blog-fusion-web-app.vercel.app/blogs');
         result = await result.json();
         setBlog(result)
     }

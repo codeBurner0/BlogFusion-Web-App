@@ -40,5 +40,4 @@ function WithoutLogin() {
         </motion.div>
     )
 }
-
 export default WithoutLogin

@@ -64,7 +64,7 @@ function CreateBlog() {
       if(imageUrl.length===0){
         setImageUrl("DefaultImage")
       }
-      let result = await fetch("https://blogfusion.vercel.app/createBlog", {
+      let result = await fetch("https://blog-fusion-web-app.vercel.app/createBlog", {
         method: "post",
         body: JSON.stringify({ name, imageUrl, title, content, userId, color, coloricon }),
         headers: {
@@ -76,7 +76,7 @@ function CreateBlog() {
   }
 
   async function updateBlog() {
-    let result = await fetch(`https://blogfusion.vercel.app/blogs/${blogId}`, {
+    let result = await fetch(`https://blog-fusion-web-app.vercel.app/blogs/${blogId}`, {
       method: 'put',
       body: JSON.stringify({ name, imageUrl, title, content, userId, color }),
       headers: {
