@@ -21,7 +21,7 @@ function Card2() {
 
     async function Delete(id) {
         console.log(id)
-        let result = await fetch(`https://blogfusion.vercel.app/blogs/${id}`, {
+        let result = await fetch(`https://blog-fusion-web-app.vercel.app/blogs/${id}`, {
             method: 'delete',
         })
         navigate(0)
